@@ -1,0 +1,185 @@
+@font-face { 
+	font-family: "VT323"; 
+src: url('../fonts/VT323-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: "VCR1";
+src: url('../fonts/GoodRetro.ttf');
+}
+
+@media screen and (min-width: 601px) {
+  
+  .itemHeadr {
+    font-size: 100%;
+  }
+
+  .itemSection {
+    font-size: 50%;
+  }
+
+  .itemMain {
+    font-size: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  
+  .itemHeadr {
+    font-size: 15%;
+  
+  }
+
+  .itemSection {
+    font-size:10%;
+
+  }
+
+  .itemMain {
+    font-size: 10%;
+  }
+
+
+}
+
+
+.itemHeadr { 
+  grid-area: header; 
+  color: rgb(255, 255, 255);
+  background-color: rgba(47, 0, 75, 0.795);
+  font-family: 'VT323';
+  font-size: xxx-large;
+  
+}
+
+.itemSection { 
+  grid-area: section; height:fit-content;
+  font-family:monospace;
+  background-color: rgba(255, 255, 255, 0.253);
+  font-size: x-large;
+}
+
+.itemMain { 
+  grid-area: main; height: fit-content;
+  font-family: 'VCR1';
+  background-color: rgba(66, 66, 66, 0.521);
+  font-size: small;
+}
+
+
+.itemTek { 
+  grid-area: tek; height: 70%; width: 100%;
+  font-family: 'VCR1';
+  font-size: large;
+  background-color: rgba(179, 0, 170, 0.7);
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.itemKon { 
+  grid-area: konsept; height: 70%; width: 100%;
+  font-family: 'VCR1';
+  font-size: large;
+  background-color: rgba(0, 192, 199, 0.7);
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.itemProd { 
+  grid-area: prod; height: 70%; width: 100%;
+  font-family: 'VCR1';
+  font-size: large;
+  background-color: rgba(224, 228, 0, 0.7);
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.itemEng {
+  grid-area: eng; height: 70%; width: 100%;
+  font-family: 'VCR1';
+  font-size: large;
+  background-color: rgb(0, 122, 221, .7);
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.itemNat {
+  grid-area: nat; height: 70%; width: 100%;
+  font-family: 'VCR1';
+  font-size: large;
+  background-color: rgb(0, 216, 18, .7);
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.itemGym {
+  grid-area: gym; height: 70%; width: 100%;
+  font-family: 'VCR1';
+  font-size: large;
+  background-color: rgb(255, 0, 0, .7);
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.itemWa {
+  font-family: 'VT323'
+}
+
+
+.itemLogo { 
+  grid-area: boi;
+}
+
+
+.grid-container {
+  display: grid; max-height:fit-content;
+  grid-template-areas:
+    'boi header header header header header'
+    'boi section section section section section'
+    'tek konsept prod eng nat gym'
+    'main main main main main main'
+    'bottom bottom bottom bottom bottom bottom';
+  grid-template-columns: minmax(10%, 20%);
+  grid-template-rows: 5em 3em 3em 3em 3em 3em 3em 3em 3em;
+  grid-gap:2%;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 10px 0;
+  color:aliceblue
+
+}
+
+body {
+  background-image: url(../bilder/tetrominocreeperorsmthn.png); background-repeat: no-repeat;
+  background-color:black;
+  background-size: contain;
+  background-position-x:center;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
