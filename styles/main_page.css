@@ -45,6 +45,22 @@ src: url('../fonts/GoodRetro.ttf');
 }
 
 
+
+.itemStuff {
+  background-color: rgba(0, 0, 0, 0.712);
+  height:fit-content;
+  width:fit-content;
+  grid-area: Stuff;
+  font-family: VCR1;
+  font-size: 90%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+
+
+
 .itemHeadr { 
   grid-area: header; 
   color: rgb(255, 255, 255);
@@ -57,7 +73,7 @@ src: url('../fonts/GoodRetro.ttf');
 .itemSection { 
   grid-area: section; height:fit-content;
   font-family:monospace;
-  background-color: rgba(255, 255, 255, 0.253);
+  background-color: rgba(59, 59, 59, 0.651);
   font-size: x-large;
 }
 
@@ -140,6 +156,7 @@ src: url('../fonts/GoodRetro.ttf');
     'boi section section section section section'
     'tek konsept prod eng nat gym'
     'main main main main main main'
+    'Stuff Stuff Stuff Stuff Stuff Stuff'
     'bottom bottom bottom bottom bottom bottom';
   grid-template-columns: minmax(10%, 20%);
   grid-template-rows: 5em 3em 3em 3em 3em 3em 3em 3em 3em;
@@ -159,6 +176,8 @@ body {
   background-size: contain;
   background-position-x:center;
   background-size: large;
+  background-position-y:100%;
+  
 }
 
 a:link {
@@ -183,4 +202,13 @@ a:active {
   color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb {
+  color:white;
+}
+
+::-webkit-scrollbar {
+  color:rgb(0, 0, 0);
+  width:1%;
 }
