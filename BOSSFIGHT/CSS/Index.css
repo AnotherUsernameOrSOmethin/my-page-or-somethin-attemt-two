@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'main';
+    src: url(../Fonts/GoodRetro.ttf);
+    font-display:swap;
+}
+
+body {
+    background-color:black;
+    color:white;
+    font-family: main;
+}
+
+button {
+    background-color: black;
+    border: none;
+    place-content: center;
+}
+
+a {
+    color:white;
+}
